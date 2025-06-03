@@ -1,0 +1,111 @@
+from zipfile import ZipFile
+import os
+
+# Define file structure again after environment reset
+project_files = {
+    "index.html": """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainPay DAO Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>🚀 BrainPay Web3 Intelligence</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome Commander Horla</h2>
+      <p>DAO-integrated blockchain intelligence system online.</p>
+      <a href="https://snapshot.org/#/brainpay.eth" target="_blank">📊 View DAO Proposal</a>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 BrainPay Network. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>""",
+
+    "about.html": """<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>About</title></head>
+<body>
+  <h1>About BrainPay</h1>
+  <p>We are a decentralized intelligence network with DAO voting, IPFS publishing, and crypto asset tracking.</p>
+</body>
+</html>""",
+
+    "contact.html": """<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Contact</title></head>
+<body>
+  <h1>Contact Us</h1>
+  <form id="contactForm">
+    <input type="text" placeholder="Name" required><br>
+    <input type="email" placeholder="Email" required><br>
+    <textarea placeholder="Your Message" required></textarea><br>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>""",
+
+    "css/style.css": """body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #101820;
+  color: #FEE715;
+}
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: #000;
+}
+nav a {
+  margin: 0 1rem;
+  color: #FEE715;
+  text-decoration: none;
+}""",
+
+    "js/main.js": """document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Message sent successfully!');
+    });
+  }
+});""",
+
+    "README.md": "# BrainPay Web3 Intelligence\nThis project is a starter template for the BrainPay DAO-integrated dashboard with Trust Wallet and IPFS features."
+}
+
+# Create directory structure
+base_dir = "/mnt/data/brainpay_web3_site"
+os.makedirs(base_dir, exist_ok=True)
+os.makedirs(os.path.join(base_dir, "css"), exist_ok=True)
+os.makedirs(os.path.join(base_dir, "js"), exist_ok=True)
+
+# Write files to disk
+for path, content in project_files.items():
+    full_path = os.path.join(base_dir, path)
+    os.makedirs(os.path.dirname(full_path), exist_ok=True)
+    with open(full_path, "w") as f:
+        f.write(content)
+
+# Create a zip file of the project
+zip_path = "/mnt/data/brainpay_web3_site.zip"
+with ZipFile(zip_path, "w") as zipf:
+    for root, _, files in os.walk(base_dir):
+        for file in files:
+            full_path = os.path.join(root, file)
+            zipf.write(full_path, os.path.relpath(full_path, base_dir))
+
+zip_path
