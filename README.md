@@ -1,20 +1,72 @@
-##Hi there 👋
+# 👋 Welcome to the BrainPay DAO Ecosystem
 
-Welcome to my GitHub profile! I'm passionate about building innovative, secure, and decentralized solutions for Bitcoin transactions and blockchain analytics. Here's a bit about me:
+Hi, I’m Horla — a developer focused on **Bitcoin intelligence**, **blockchain analytics**, and **decentralized financial automation**.
 
-🔭 Current Project: I’m working on a Bitcoin transaction tracking application built with Node.js. It features real-time updates, push notifications, and integrates with multiple APIs to enhance blockchain data insights.
+## 🔭 Current Mission
 
-🌱 Learning: I’m diving deeper into blockchain technologies, real-time data processing, and AI-driven anomaly detection for cryptocurrency transaction monitoring.
+I'm leading the development of **BrainPay** — a real-time Bitcoin transaction intelligence system:
 
-👯 Collaboration: I'm looking to collaborate on open-source Bitcoin-related projects or anything related to blockchain analytics, cryptocurrency development, and DeFi innovations.
+- 📡 Node.js + FastAPI + Firebase
+- 🔐 Tracks BTC movements across wallets
+- ⚡ Live alerts & fraud scoring
+- 🎖 XP-based contributor system
+- 🧠 Copilot GPT agents for vote reasoning & fraud analysis
 
-🤔 Looking for Help: I’m looking for support in improving my Bitcoin transaction tracking system, integrating more APIs for enhanced blockchain data, and optimizing real-time processing for Bitcoin transactions.
+> Powered by: OpenAI, Firebase, Railway, Snapshot, EAS, IPFS, Polygon, Ceramic
 
-💬 Ask Me About: Bitcoin development, Node.js, blockchain technologies, real-time data processing, and DeFi applications. I love discussing the future of cryptocurrency and the impact of blockchain on decentralized finance.
+---
 
-📫 How to Reach Me: Feel free to reach out via email at horlabrainmoorebtc04t@gmail.com or on Telegram @brainpay / Discord @brainpay.
+## 🚀 Tech Stack Highlights
 
-😄 Pronouns: He/Him
+- **Frontend**: Next.js + Tailwind  
+- **Backend**: Node.js (GPT API) + Python (XP Engine)  
+- **Blockchain**: Hardhat + Polygon + Snapshot  
+- **AI/LLM**: GPT-4 Copilot, LangChain  
+- **Storage**: Firestore + Ceramic + Web3.Storage  
+- **CI/CD**: GitHub Actions + Vercel + Railway
+--
 
-⚡ Fun Fact: I’m deeply passionate about cryptocurrency, decentralized finance (DeFi), and the future of blockchain technologies. I believe that blockchain will reshape industries and empower people with more control over their financial future.
--->
+## 🤝 Let's Collaborate
+
+I'm open to contributing to and partnering on:
+
+- 🪙 Open-source Bitcoin / Web3 intelligence tools  
+- 📊 Blockchain analytics (real-time + on-chain)  
+- 🎮 DeFi or DAO UX powered by mission-based XP  
+- 🧬 Zero-knowledge + proof-of-human identity
+
+---
+
+## 💡 Ask Me About
+
+- Bitcoin Dev, EVM badges, GPT agents  
+- Real-time wallet activity feeds  
+- DAO reward systems  
+- XP escrow flows  
+- Firebase + IPFS architecture
+
+---
+
+📫 **Reach me**:  
+- Email: horlabrainmoorebtc04t@gmail.com  
+- Telegram: [@brainpay](https://t.me/Horlabrain)  
+- Discord: brainpay  
+- ENS: `brainpay.eth`
+
+😄 **Pronouns**: He/Him  
+⚡ **Fun Fact**: I believe decentralized intelligence will shape the future of finance and public infrastructure.
+
+---
+
+## 🧠 Live XP Console Demo
+[🔗 Launch Console Dashboard](https://brainpay-firebase-ai-app.web.app)
+
+## 🎖 Badge Claim + Wallet View
+[🔗 Explore Badge Minting](https://brainpay-firebase-ai-app.web.app/claim/badges)
+
+---
+
+> 💥 _“DAO-native Bitcoin intelligence will power the next era of open finance.”_
+
+
+---
